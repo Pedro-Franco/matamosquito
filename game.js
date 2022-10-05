@@ -1,6 +1,7 @@
 var altura = 0
 var largura = 0
 var vidas = 1
+var mosquitosMortos = 0
 var tempo = 15
 
 var criaMosquitoTempo = 1500
@@ -74,6 +75,7 @@ function posicaoRandomica() {
   mosquito.onclick = function () {
     this.remove()
   }
+  document.getElementById('mosquitosMortos').innerHTML = mosquitosMortos++
   
   document.body.appendChild(mosquito)
 }
